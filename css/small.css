@@ -1,0 +1,253 @@
+/* Variables Import*/
+@import url(../css/partials/variables.css);
+
+/* ========================= Global Styles =========================== */
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+main section{
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* ========================= Flex Styles =========================== */
+
+.column{
+    float: left;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.small-12{
+    width: 100%;
+}
+
+.small-6{
+    width: 50%;
+}
+
+
+/* ========================= Header Styles =========================== */
+header{
+    height: 4rem;
+    background-color: var(--primary-color);
+    align-content: center;
+
+}
+
+header div{
+    align-content: center;
+    padding-left: 15px;
+    padding-right: 37px;
+}
+
+.btn {
+    background-color: transparent; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    font-size: 16px;
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+
+/* ========================= Nav Styles =========================== */
+nav{
+    position: absolute;
+    float: left; 
+    content: '';
+    z-index: 100;
+    width: 90%;
+    height: 100vh; /* This makes that the div takes all the space from the device*/
+    background-color: whitesmoke;
+    box-shadow: 35px 0 #00000016 ;
+}
+
+nav .perfil-area{
+    height: 20%;
+    border-bottom: solid 1px #CBCBCB;
+    padding-top: 28px;
+    padding-left: 22px;
+}
+
+
+
+
+
+nav .perfil-area .usser-data .usser-image .image-area{
+    /* Styles for perfil image */
+    background: url(../images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    /* Div Styles */
+    height: 76px;
+    width: 76px;
+    
+}
+
+nav .perfil-area .icon-config-area{
+    text-align: right;
+}
+nav .perfil-area .icon-config-area i{
+    color: var(--background-color);
+    font-size: 24px;
+    padding-right: 6px;
+}
+
+nav .rate-area{
+    padding-top: 18px;
+    
+    height: 80%;
+    /* Grid Styles */
+    display: grid;
+    grid-auto-columns: 358px;
+    grid-auto-rows: 67px;
+    grid-gap: 20px;
+}
+
+nav .rate-area .rate-pers{
+    padding-left: 20px;
+    display: flex;
+    align-content: center;
+    border: none; /* Remove borders */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+
+
+
+
+
+
+
+
+nav .rate-area .rate-pers p{
+    margin-top: 19px;
+}
+
+
+
+
+
+
+
+
+.none-display{ /* It takes out the menu till user click on the button. JavaScript suprimes the class */
+    display: none;
+}
+ 
+ 
+
+
+/* ========================= Main Styles =========================== */
+
+/* Used Rated Styles */
+
+main .used-rate{
+    padding-top: 42px;
+    padding-bottom: 155px;
+}
+
+main .used-rate .rate-name{
+    background-color: var(--background-color);
+    text-align: center;
+    border: transparent;
+    border-radius: 16px;
+}
+
+/* Price Circle Styles */
+
+main .price-circle{
+    padding-bottom: 130px;
+}
+
+main .price-circle .price{
+    border: transparent;
+    border-radius: 130px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    font-size: 82px;
+    width: 230px;
+    height: 230px;
+}
+
+/* Define Words Area */
+
+
+
+
+
+
+/* ========================= Footer Styles =========================== */
+
+footer{
+    /* Grid Styles for three columns with same widht and height */
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    /* This make the footer to be in the page's bottom*/
+    position: fixed;
+    bottom: 0;
+    width:100%;
+
+
+}
+
+footer .submenu{
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 57px;
+    display: flex;
+    align-items: center;
+}
+
+footer .submenu button{
+    width: 100%;
+    border: transparent;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+
+
+
+
+
+
+
+
+input[type="number"]
+{
+    -webkit-appearance: textfield !important;
+    margin: 0;
+    -moz-appearance:textfield !important;
+}
